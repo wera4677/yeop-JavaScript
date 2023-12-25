@@ -1,0 +1,27 @@
+/*숨겨진 부분 (오버레이)*/
+.modal {
+    position: fixed; /*위치 고정 (항상 화면 중심에 표시)*/
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none; 
+}
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.7);
+    display: none;
+}
+@media(min-width: 48rem){
+    .modal {
+        left: calc(50% - 20rem); /*화면중심을 계산해준다*/
+        width: 40rem;
+    }
+}
