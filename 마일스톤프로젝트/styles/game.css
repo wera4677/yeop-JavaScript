@@ -2,7 +2,7 @@
 #active-game {
     text-align: center;
     margin: 2rem 0 5rem 0; /*윗쪽 오른쪽 밑 왼쪽*/
-    /* display: none; */   
+    display: none;   
 }
 #game-over {
     max-width: 40rem;
