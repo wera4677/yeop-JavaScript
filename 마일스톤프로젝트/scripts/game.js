@@ -10,4 +10,5 @@ function startGame(){ //게임시작 버튼이 클릭되었을때 게임화면 �
 
 function selectGameField(event) { //어떤 필드에 어떤 심볼이 적용되는지 
     event.target.textContent = players[activePlayer].symbol; //플레이어 [0]
+    event.target.classList.add("disabled");
 }
